@@ -29,5 +29,5 @@ tail -n 728 pt_br_neutral_corpus/metadata_shuf.csv > pt_br_neutral_corpus/metada
 # Compute dataset mean and variance for normalization
 #######################################
 cd TTS
-python3.8 TTS/bin/compute_statistics.py ../tacotron2-DDC.json ../scale_stats.npy --data_path ../pt_br_neutral_corpus/
+python3.8 TTS/bin/compute_statistics.py ../tacotron2-DDC.json ../scale_stats.npy --data_path ../pt_br_neutral_corpus/ --output_path ../pt_br_neutral_checkpoints
 #python3.8 TTS/bin/compute_statistics.py ../config.json ../scale_stats.npy --data_path ../pt_br_neutral_corpus/

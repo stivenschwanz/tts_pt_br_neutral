@@ -3,7 +3,7 @@
     "datasets": [
         {
             "name": "ljspeech",
-            "path": "DEFINE THIS",
+            "path": "../pt_br_neutral_corpus",
             "meta_file_train": "metadata.csv",
             "meta_file_val": null
         }
@@ -87,8 +87,8 @@
     "min_seq_len": 6,
     "max_seq_len": 180,
     "compute_input_seq_cache": true,
-    "output_path": "DEFINE THIS",
-    "phoneme_cache_path": "DEFINE THIS",
+    "output_path": ../pt_br_neutral_checkpoints,
+    "phoneme_cache_path": "../pt_br_neutral_phoneme_chache,
     "use_phonemes": true,
     "phoneme_language": "pt-br",
     "characters":{
