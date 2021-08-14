@@ -30,7 +30,8 @@
         "symmetric_norm": true,
         "max_norm": 4.0,
         "clip_norm": true,
-        "stats_path": "scale_stats.npy"
+        "stats_path": null,
+        "log_func": "log10"
     },
     "gst":{
         "gst_embedding_dim": 256,
@@ -39,7 +40,7 @@
     },
     "distributed_backend": "gloo",
     "distributed_url": "tcp:\/\/localhost:54321",
-    "run_name": "ljspeech-ddc",
+    "run_name": "pt_br_neutral_tacotron2-ddc",
     "run_description": "tacotron2 with double decoder consistency.",
     "batch_size": 64,
     "eval_batch_size": 16,
@@ -87,8 +88,8 @@
     "min_seq_len": 6,
     "max_seq_len": 180,
     "compute_input_seq_cache": true,
-    "output_path": ../pt_br_neutral_checkpoints,
-    "phoneme_cache_path": "../pt_br_neutral_phoneme_chache,
+    "output_path": "../pt_br_neutral_checkpoints",
+    "phoneme_cache_path": "../pt_br_neutral_phoneme_cache",
     "use_phonemes": true,
     "phoneme_language": "pt-br",
     "characters":{

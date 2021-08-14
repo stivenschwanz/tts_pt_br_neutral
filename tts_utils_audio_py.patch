@@ -1,0 +1,13 @@
+diff --git a/TTS/utils/audio.py b/TTS/utils/audio.py
+index 40d82365..f2598ff1 100644
+--- a/TTS/utils/audio.py
++++ b/TTS/utils/audio.py
+@@ -424,7 +424,7 @@ class AudioProcessor(object):
+         linear_std = stats["linear_std"]
+         stats_config = stats["audio_config"]
+         # check all audio parameters used for computing stats
+-        skip_parameters = ["griffin_lim_iters", "stats_path", "do_trim_silence", "ref_level_db", "power"]
++        skip_parameters = ["griffin_lim_iters", "stats_path", "do_trim_silence", "ref_level_db", "power","log_func"]
+         for key in stats_config.keys():
+             if key in skip_parameters:
+                 continue

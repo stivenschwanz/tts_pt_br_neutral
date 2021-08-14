@@ -15,17 +15,21 @@ sudo apt install python3.8-dev
 #sudo sh cuda_11.1.0_455.23.05_linux.run
 
 #######################################
-# Clone Coqui AI TTS
+# Coqui AI TTS
 #######################################
+# Clone repository
 git clone https://github.com/coqui-ai/TTS
+
+# Patch file
+patch TTS/utils/audio.py tts_utils_audio_py.patch 
 
 #######################################
 # Install requeriments
 #######################################
 cd TTS
 sudo apt-get install espeak
-pip3.8 install -r requirements.txt
-sudo python3.8 setup.py install
+pip3 install -r requirements.txt
+sudo python3 setup.py install
 
 # The following commands shouldn't be necessary, but...
 #pip3.8 install colorama==0.3.9
@@ -35,7 +39,7 @@ sudo python3.8 setup.py install
 
 # Workaround to use the GPU (https://pytorch.org/get-started/previous-versions/)
 
-pip install torch==1.7.1+cu101 torchvision==0.8.2+cu101 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
+#pip install torch==1.7.1+cu101 torchvision==0.8.2+cu101 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
 
 #pip install torch==1.8.0+cu111 torchvision==0.9.0+cu111 torchaudio==0.8.0 -f https://download.pytorch.org/whl/torch_stable.html
 
