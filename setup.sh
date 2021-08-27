@@ -6,26 +6,27 @@ echo $RUN_DIR
 #######################################
 # Update python
 #######################################
+
 sudo apt install python3.8-dev
 
 #######################################
 # Install CUDA 11.1
 #######################################
+
 wget https://developer.download.nvidia.com/compute/cuda/11.1.0/local_installers/cuda_11.1.0_455.23.05_linux.run
 sudo sh cuda_11.1.0_455.23.05_linux.run
 
 #######################################
-# Coqui AI TTS
+# Clone the Coqui AI TTS repository and patch it
 #######################################
-# Clone repository
-git clone https://github.com/coqui-ai/TTS
 
-# Patch file
-patch TTS/utils/audio.py tts_utils_audio_py.patch 
+git clone https://github.com/coqui-ai/TTS
+patch TTS/TTS/utils/audio.py tts_utils_audio_py.patch 
 
 #######################################
 # Install requeriments
 #######################################
+
 cd TTS
 sudo apt-get install espeak
 pip3 install -r requirements.txt
