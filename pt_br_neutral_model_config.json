@@ -1,6 +1,10 @@
 {
     "model": "Tacotron2",
-    "restore_path": "../pt_br_neutral_checkpoints/checkpoint_381000.pth.tar",
+    //"restore_path": "../checkpoints/best_model_37100.pth.tar",
+    //"restore_path": "../checkpoints/best_model_97280.pth.tar",    
+    //"restore_path": "../checkpoints/checkpoint_edresson.pth.tar",
+    "continue_path": "../checkpoints/tacotron2-ddc-agosto-20-2021_12+14-c3082267/",
+    
     "datasets": [
         {
             "name": "ljspeech",
@@ -40,7 +44,7 @@
     },
     "distributed_backend": "gloo",
     "distributed_url": "tcp:\/\/localhost:54321",
-    "run_name": "pt_br_neutral_tacotron2-ddc",
+    "run_name": "tacotron2-ddc",
     "run_description": "tacotron2 with double decoder consistency.",
     "batch_size": 64,
     "eval_batch_size": 16,
@@ -85,19 +89,11 @@
     "num_loader_workers": 4,
     "num_val_loader_workers": 4,
     "batch_group_size": 4,
-    "min_seq_len": 6,
+    "min_seq_len": 3,
     "max_seq_len": 180,
     "compute_input_seq_cache": true,
-    "output_path": "../pt_br_neutral_checkpoints",
-    "phoneme_cache_path": "../pt_br_neutral_phoneme_cache",
-    "use_phonemes": true,
-    "phoneme_language": "pt-br",
-    "characters":{
-        "pad": "_",
-        "eos": "&",
-        "bos": "*",
-        "characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZÇÃÀÁÂÊÉÍÓÔÕÚÛabcdefghijklmnopqrstuvwxyzçãàáâêéíóôõúû!(),-.:;? ",
-        "punctuations":"!'(),-.:;? ",
-        "phonemes":"iyɨʉɯuɪʏʊeøɘəɵɤoɛœɜɞʌɔæɐaɶɑɒᵻʘɓǀɗǃʄǂɠǁʛpbtdʈɖcɟkɡqɢʔɴŋɲɳnɱmʙrʀⱱɾɽɸβfvθðszʃʒʂʐçʝxɣχʁħʕhɦɬɮʋɹɻjɰlɭʎʟˈˌːˑʍwɥʜʢʡɕʑɺɧɚ˞ɫ'̃' "
-    }
+    "output_path": "../checkpoints",
+    "phoneme_cache_path": "../phoneme_cache",
+    "use_phonemes": false,
+    "phoneme_language": "pt-br"
 }

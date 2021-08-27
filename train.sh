@@ -18,6 +18,6 @@ export CUDA_LIBS=/usr/local/cuda/lib64
 cd TTS
 # change the GPU id if needed                                  
 CUDA_VISIBLE_DEVICES="0" python3 TTS/bin/train_tts.py --config_path ../pt_br_neutral_model_config.json \
-                                                     --output_path ../pt_br_neutral_checkpoints \
+                                                     --output_path ../checkpoints \
                                                      --coqpit.datasets.0.path ../pt_br_neutral_corpus/ \
-                                                     --coqpit.audio.stats_path ../scale_stats.npy                                                    
+                                                     --coqpit.audio.stats_path ../scale_stats.npy #--vocoder_name vocoder_models/universal/libri-tts/fullband-melgan                                                
