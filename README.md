@@ -21,12 +21,12 @@ Run the following script to setup the trainning environment:
 ./setup.sh
 ```
 
-Then, execute the script below to download the Brazilian Portuguese corpus, split it into trainning and validation datasets and extract relevant statistics:
+Then, execute the script below to download the Brazilian Portuguese corpus, split it into trainning/validation datasets and extract relevant statistics:
 ```sh
 ./prep.sh
 ```
 
-In the sequel, start the training processing (make sure the CUDA options are properly set up for your machine):
+In the sequel, start the training process (make sure the CUDA options are properly set up for your machine):
 ```sh
 ./train.sh
 ```
