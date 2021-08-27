@@ -2,7 +2,7 @@
 
 ## Intro
 
-This repository offers some scipts to help:
+This repository offers some useful scripts to help:
 * creating or using a single-voice Brazilian Portuguese corpus based on the [Edresson Portuguese corpus](https://github.com/Edresson/TTS-Portuguese-Corpus). Many thanks for his great job!
 * setting up the trainning environment;
 * preparing/pre-processing the Brazilian Portuguese corpus for trainning;
@@ -38,7 +38,7 @@ In the sequel, start the training process (make sure the CUDA options are proper
 ./train.sh
 ```
 
-Finally, evaluate the trainned network as follows (make sure to set the proper checkpoint):
+Finally, evaluate the trainned network as follows (make sure to select the proper checkpoint):
 ```sh
 ./test.sh
 ```
@@ -48,4 +48,4 @@ Finally, evaluate the trainned network as follows (make sure to set the proper c
 Some planned/required improvements:
 * create a Colab notebook to run all scripts at once;
 * use a multi-voice Brazilian Portuguese corpus;
-* setup an Anaconda environment to run the Python scripts.
+* setup an Conda environment to run the Python scripts.
