@@ -1,5 +1,7 @@
 # Brazilian Portuguese Text-to-speech (TTS)
 
+## Intro
+
 This repository offers some scipts to help:
 * using a single-voice Brazilian Portuguese corpus based on the [Edresson Portuguese corpus](https://github.com/Edresson/TTS-Portuguese-Corpus). Many thanks for his great job!
 * setting up the trainning environment;
@@ -37,5 +39,7 @@ Finally, evaluate the trainned network as follows (make sure to set the proper c
 ```
 
 ## Todo list
+
+Some planned/required improvements:
 * create a Colab notebook to run all scripts at once;
-* use a multi-voice Brazilian Portuguese corpus;
+* use a multi-voice Brazilian Portuguese corpus.
