@@ -3,7 +3,7 @@
 ## Intro
 
 This repository offers some scipts to help:
-* using a single-voice Brazilian Portuguese corpus based on the [Edresson Portuguese corpus](https://github.com/Edresson/TTS-Portuguese-Corpus). Many thanks for his great job!
+* creating or using a single-voice Brazilian Portuguese corpus based on the [Edresson Portuguese corpus](https://github.com/Edresson/TTS-Portuguese-Corpus). Many thanks for his great job!
 * setting up the trainning environment;
 * preparing/pre-processing the Brazilian Portuguese corpus for trainning;
 * trainning the Tacotron2 network using the [Coqui TTS](https://github.com/coqui-ai/TTS). Many thanks for their convenient TTS implementation!
@@ -26,6 +26,11 @@ Run the following script to setup the trainning environment:
 Then, execute the script below to download the Brazilian Portuguese corpus, split it into trainning/validation datasets and extract relevant statistics:
 ```sh
 ./prep.sh
+```
+
+Alternatively, create your own Brazilian Portuguese corpus as follows (make sure to change the parameters e.g. the gender in the `pt_br_corpus.py` file):
+```sh
+python3 pt_br_corpus.py
 ```
 
 In the sequel, start the training process (make sure the CUDA options are properly set up for your machine):

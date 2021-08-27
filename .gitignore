@@ -4,3 +4,4 @@ pt_br_neutral_corpus
 vocoders
 scale_stats.npy
 *.zip
+__pycache__
