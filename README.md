@@ -6,7 +6,7 @@ This repository offers some scipts to help:
 * creating or using a single-voice Brazilian Portuguese corpus based on the [Edresson Portuguese corpus](https://github.com/Edresson/TTS-Portuguese-Corpus). Many thanks for his great job!
 * setting up the trainning environment;
 * preparing/pre-processing the Brazilian Portuguese corpus for trainning;
-* trainning the Tacotron2 network using the [Coqui TTS](https://github.com/coqui-ai/TTS). Many thanks for their convenient TTS implementation!
+* trainning the Tacotron2 network using the [Coqui TTS](https://github.com/coqui-ai/TTS). Many thanks for their very clever/convenient TTS implementation!
 * testing the trainned Tacotron2 network.
 
 ## Scripts
@@ -47,4 +47,5 @@ Finally, evaluate the trainned network as follows (make sure to set the proper c
 
 Some planned/required improvements:
 * create a Colab notebook to run all scripts at once;
-* use a multi-voice Brazilian Portuguese corpus.
+* use a multi-voice Brazilian Portuguese corpus;
+* setup an Anaconda environment to run the Python scripts.
