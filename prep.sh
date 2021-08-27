@@ -6,17 +6,16 @@ echo $RUN_DIR
 #######################################
 # TTS checkpoints
 #######################################
-mkdir pt_br_neutral_checkpoints
-cd pt_br_neutral_checkpoints
-# download config
-wget https://www.dropbox.com/s/zdt3iu6giecd3kn/config.json
-# download checkpoint
-wget https://www.dropbox.com/s/rxchxzdqopjgze6/best_model.pth.tar
+mkdir checkpoints
+cd checkpoints
+gdown --id 1WZdLA0yF35J1cQBvlTvSiLdru1pj4erI
+unzip tacotron2-ddc-agosto-20-2021_12+14-c3082267.zip
 cd..
+
 #######################################
 # PT-BR neutral corpus
 #######################################
-wget https://www.dropbox.com/s/81bfzl597k506h2/pt_br_neutral_corpus.zip
+gdown --id 1nf2GxGO5nrAprj2kGQGUXmedOjEMM0S5
 unzip pt_br_neutral_corpus.zip
 
 #######################################

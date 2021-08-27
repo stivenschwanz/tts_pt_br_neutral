@@ -11,8 +11,8 @@ sudo apt install python3.8-dev
 #######################################
 # Install CUDA 11.1
 #######################################
-#wget https://developer.download.nvidia.com/compute/cuda/11.1.0/local_installers/cuda_11.1.0_455.23.05_linux.run
-#sudo sh cuda_11.1.0_455.23.05_linux.run
+wget https://developer.download.nvidia.com/compute/cuda/11.1.0/local_installers/cuda_11.1.0_455.23.05_linux.run
+sudo sh cuda_11.1.0_455.23.05_linux.run
 
 #######################################
 # Coqui AI TTS
