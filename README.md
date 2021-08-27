@@ -38,7 +38,7 @@ In the sequel, start the training process (make sure the CUDA options are proper
 ./train.sh
 ```
 
-Finally, evaluate the trainned network as follows (make sure to set the proper checkpoint):
+Finally, evaluate the trainned network as follows (make sure to select the proper checkpoint):
 ```sh
 ./test.sh
 ```
@@ -48,4 +48,4 @@ Finally, evaluate the trainned network as follows (make sure to set the proper c
 Some planned/required improvements:
 * create a Colab notebook to run all scripts at once;
 * use a multi-voice Brazilian Portuguese corpus;
-* setup an Anaconda environment to run the Python scripts.
+* setup an Conda environment to run the Python scripts.
