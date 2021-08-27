@@ -6,6 +6,7 @@ echo $RUN_DIR
 #######################################
 # TTS checkpoints
 #######################################
+
 mkdir checkpoints
 cd checkpoints
 gdown --id 1WZdLA0yF35J1cQBvlTvSiLdru1pj4erI
@@ -15,12 +16,14 @@ cd..
 #######################################
 # PT-BR neutral corpus
 #######################################
+
 gdown --id 1nf2GxGO5nrAprj2kGQGUXmedOjEMM0S5
 unzip pt_br_neutral_corpus.zip
 
 #######################################
 # Create train-val splits
 #######################################
+
 shuf pt_br_neutral_corpus/metadata.csv > pt_br_neutral_corpus/metadata_shuf.csv
 head -n 6000 pt_br_neutral_corpus/metadata_shuf.csv > pt_br_neutral_corpus/metadata_train.csv
 tail -n 728 pt_br_neutral_corpus/metadata_shuf.csv > pt_br_neutral_corpus/metadata_val.csv
@@ -28,6 +31,7 @@ tail -n 728 pt_br_neutral_corpus/metadata_shuf.csv > pt_br_neutral_corpus/metada
 #######################################
 # Compute dataset mean and variance for normalization
 #######################################
+
 cd TTS
 python3 TTS/bin/compute_statistics.py ../pt_br_neutral_model_config.json ../scale_stats.npy --data_path ../pt_br_neutral_corpus/ --output_path ../checkpoints
 

@@ -28,7 +28,7 @@ patch TTS/TTS/utils/audio.py tts_utils_audio_py.patch
 #######################################
 
 cd TTS
-sudo apt-get install espeak
+sudo apt-get install espeak alsa-utils
 pip3 install -r requirements.txt
 sudo python3 setup.py install
 
