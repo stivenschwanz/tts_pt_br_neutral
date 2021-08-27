@@ -46,6 +46,6 @@ Finally, evaluate the trainned network as follows (make sure to select the prope
 ## Todo list
 
 Some planned/required improvements:
-* create a Colab notebook to run all scripts at once;
+* create a Colab notebook to run all scripts at once (there is a draft [here](https://colab.research.google.com/drive/1K8QVpkLkK_ryUKJpGUAIQAcU4QSDAcx3?usp=sharing));
 * use a multi-voice Brazilian Portuguese corpus;
 * setup an Conda environment to run the Python scripts.
