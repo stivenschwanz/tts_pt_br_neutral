@@ -2,7 +2,7 @@
 
 ## Intro
 
-This repository offers some scipts to help:
+This repository offers some useful scripts to help:
 * creating or using a single-voice Brazilian Portuguese corpus based on the [Edresson Portuguese corpus](https://github.com/Edresson/TTS-Portuguese-Corpus). Many thanks for his great job!
 * setting up the trainning environment;
 * preparing/pre-processing the Brazilian Portuguese corpus for trainning;
